@@ -5,8 +5,63 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Paperlogy-Thin';
+    src: url('Paperlogy/Paperlogy-1Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-ExtraLight';
+    src: url('Paperlogy/Paperlogy-2ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-Light';
+    src: url('Paperlogy/Paperlogy-3Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-Regular';
+    src: url('Paperlogy/Paperlogy-4Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-Medium';
+    src: url('Paperlogy/Paperlogy-5Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-SemiBold';
+    src: url('Paperlogy/Paperlogy-6SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-Bold';
+    src: url('Paperlogy/Paperlogy-7Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-ExtraBold';
+    src: url('Paperlogy/Paperlogy-8ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Paperlogy-Black';
+    src: url('Paperlogy/Paperlogy-9Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Paperlogy-Regular', 'Noto Sans KR', sans-serif;
     line-height: 1.6;
 }
 
@@ -65,8 +120,15 @@ body {
 }
 
 .logo {
+    font-family: 'Paperlogy-Regular', 'Noto Sans KR', sans-serif;
     font-size: 24px;
     font-weight: bold;
+}
+
+.logo-img {
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* 배너 */
