@@ -341,74 +341,190 @@ body {
 /* 반응형 디자인 */
 @media (max-width: 1200px) {
     .ad-side {
-        display: none;
+        display: none !important;
     }
     .main-content {
-        margin: 0;
+        margin: 0 !important;
     }
     .main-inner {
-        max-width: 100%;
-        padding: 0 10px;
+        max-width: 100% !important;
+        padding: 0 15px !important;
     }
     .card-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 15px !important;
+    }
+    .banner-content {
+        max-width: 100% !important;
+    }
+    .ad-section {
+        padding: 0 15px !important;
     }
 }
 
 @media (max-width: 900px) {
-    .main-inner {
-        max-width: 100%;
-        padding: 0 5px;
+    body {
+        font-size: 15px !important; /* 기본 폰트 약간 줄임 */
     }
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .main-inner {
+        padding: 0 10px !important;
+    }
+    .header {
+        padding: 15px !important;
+    }
+    .logo {
+        font-size: 20px !important;
+    }
+    .logo-img {
+        height: 28px !important;
+    }
+    .banner {
+        margin-bottom: 30px !important;
     }
     .category-section {
-        gap: 6px;
+        gap: 10px !important;
+        margin: 25px 0 20px 0 !important;
+    }
+    .category-btn {
+        font-size: 15px !important;
+        padding: 9px 20px !important;
+    }
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+    .card-content h3 {
+        font-size: 16px !important;
+    }
+    .card-content p {
+        font-size: 13px !important;
+    }
+    .pagination {
+        margin-top: 30px !important;
+    }
+    .partners-notice p {
+        font-size: 16px !important;
+    }
+    .footer {
+        padding: 30px 15px !important;
+        margin-top: 50px !important;
+    }
+    .footer-content {
+        grid-template-columns: 1fr !important;
+    }
+    .ad-section {
+        padding: 0 10px !important;
+        margin-bottom: 30px !important;
     }
 }
 
 @media (max-width: 600px) {
+    body {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
     .main-inner {
-        padding: 0 2px !important;
+        padding: 0 8px !important;
     }
-    .category-section {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        gap: 6px;
+    .header {
+        padding: 12px !important;
     }
-    .category-btn {
-        min-width: 90px;
-        white-space: nowrap;
-        font-size: 15px;
-        padding: 8px 12px;
+    .logo {
+        font-size: 18px !important;
     }
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+    .logo-img {
+        height: 24px !important;
     }
-    .card {
-        margin: 0;
+    .banner {
+        margin-bottom: 20px !important;
     }
     .banner-image {
-        height: auto;
-        max-height: 120px;
-        object-fit: contain;
+        min-height: 60px !important;
+        aspect-ratio: 16/6 !important; /* 배너 비율 조정 */
+        object-fit: cover !important;
+        border: none !important;
     }
+    .category-section {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        margin: 20px 0 15px 0 !important;
+        padding: 0 8px !important; /* 내부 패딩으로 스크롤 영역 확보 */
+    }
+    .category-btn {
+        font-size: 13px !important;
+        padding: 8px 15px !important;
+        white-space: nowrap !important;
+        flex-shrink: 0; /* 버튼이 줄어들지 않도록 */
+    }
+    .card-section {
+        padding: 0 8px 15px 8px !important;
+    }
+    .card-grid {
+        gap: 8px !important;
+    }
+    .card {
+        border-radius: 6px !important;
+    }
+    .card-image {
+        padding: 10px !important;
+    }
+    .card-content {
+        padding: 10px !important;
+    }
+    .card-content h3 {
+        font-size: 14px !important;
+        margin-bottom: 5px !important;
+    }
+    .card-content p {
+        font-size: 12px !important;
+    }
+    .pagination {
+        margin-top: 25px !important;
+        gap: 8px !important;
+    }
+    .pagination-numbers {
+        display: none !important; /* 모바일에서는 숫자 페이지 숨김 */
+    }
+    .pagination-btn {
+        padding: 8px 12px !important;
+    }
+    .partners-notice {
+        margin: 25px 0 !important;
+        padding: 15px !important;
+    }
+    .partners-notice p {
+        font-size: 13px !important;
+    }
+    .footer {
+        padding: 25px 10px !important;
+        margin-top: 40px !important;
+    }
+    .footer-section h4 {
+        font-size: 15px !important;
+    }
+    .footer-section p {
+        font-size: 12px !important;
+    }
+    .ad-section {
+        padding: 0 8px !important;
+        margin-bottom: 20px !important;
+    }
+    .ad-container {
+        min-height: 80px !important;
+    }
+    /* 모바일 전용 광고 노출 */
     .ad-mobile-only {
         display: block !important;
         width: 100% !important;
-        margin: 12px 0 !important;
+        margin: 20px 0 !important;
         padding: 0 !important;
-        background: transparent !important;
     }
     .ad-mobile-only .ad-container {
         min-height: 90px !important;
         height: 90px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
     }
     .ad-mobile-only .adsbygoogle {
         min-height: 90px !important;
@@ -416,56 +532,149 @@ body {
         width: 100% !important;
         display: block !important;
     }
-    .banner-image {
-        min-height: 60px !important;
-        aspect-ratio: 4/1 !important;
-        width: 100% !important;
-        object-fit: cover !important;
-        display: block !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .category-btn {
-        min-width: 70px;
-        font-size: 13px;
-        padding: 6px 8px;
-    }
-    .banner-image {
-        max-height: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .pagination-numbers {
-        display: none;
-    }
-    
-    .pagination-btn {
-        padding: 8px 12px;
-    }
-    
-    .partners-notice {
-        margin: 30px 0;
-        padding: 15px;
-    }
-    
-    .partners-notice p {
-        font-size: 14px;
-    }
-    
-    .ad-section {
-        padding: 0 10px;
-    }
 }
 
 @media (max-width: 480px) {
-    .banner-content h1 {
-        font-size: 28px;
+    body {
+        font-size: 13px !important;
+    }
+    .main-inner {
+        padding: 0 5px !important;
+    }
+    .header {
+        padding: 10px !important;
+    }
+    .logo {
+        font-size: 16px !important;
+    }
+    .logo-img {
+        height: 22px !important;
+    }
+    .banner {
+        margin-bottom: 15px !important;
+    }
+    .banner-image {
+        aspect-ratio: 16/5 !important;
+    }
+    .category-section {
+        gap: 6px !important;
+        margin: 15px 0 12px 0 !important;
+        padding: 0 5px !important;
+    }
+    .category-btn {
+        font-size: 12px !important;
+        padding: 7px 12px !important;
+    }
+    .card-section {
+        padding: 0 5px 12px 5px !important;
+    }
+    .card-grid {
+        gap: 6px !important;
+    }
+    .card-image {
+        padding: 8px !important;
+    }
+    .card-content {
+        padding: 8px !important;
+    }
+    .card-content h3 {
+        font-size: 13px !important;
+    }
+    .card-content p {
+        font-size: 11px !important;
+    }
+    .pagination {
+        margin-top: 20px !important;
+    }
+    .partners-notice {
+        margin: 20px 0 !important;
+        padding: 12px !important;
+    }
+    .partners-notice p {
+        font-size: 12px !important;
+    }
+    .footer {
+        padding: 20px 8px !important;
+        margin-top: 30px !important;
+    }
+    .ad-section {
+        padding: 0 5px !important;
+        margin-bottom: 15px !important;
+    }
+    .ad-mobile-only {
+        margin: 15px 0 !important;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 12px !important;
+    }
+    .main-inner {
+        padding: 0 3px !important;
+    }
+    .header {
+        padding: 8px !important;
+    }
+    .logo {
+        font-size: 15px !important;
+    }
+    .logo-img {
+        height: 20px !important;
+    }
+    .banner {
+        margin-bottom: 10px !important;
+    }
+    .banner-image {
+        aspect-ratio: 16/4.5 !important;
+    }
+    .category-section {
+        gap: 5px !important;
+        margin: 12px 0 10px 0 !important;
+        padding: 0 3px !important;
+    }
+    .category-btn {
+        font-size: 11px !important;
+        padding: 6px 10px !important;
+    }
+    .card-section {
+        padding: 0 3px 10px 3px !important;
+    }
+    .card-grid {
+        gap: 5px !important;
+    }
+    .card-image {
+        padding: 6px !important;
+    }
+    .card-content {
+        padding: 6px !important;
+    }
+    .card-content h3 {
+        font-size: 12px !important;
+    }
+    .card-content p {
+        font-size: 10px !important;
+    }
+    .pagination-btn {
+        padding: 7px 10px !important;
+    }
+    .partners-notice {
+        margin: 15px 0 !important;
+        padding: 10px !important;
+    }
+    .partners-notice p {
+        font-size: 11px !important;
+    }
+    .footer {
+        padding: 15px 5px !important;
+        margin-top: 25px !important;
+    }
+    .ad-section {
+        padding: 0 3px !important;
+        margin-bottom: 12px !important;
+    }
+    .ad-mobile-only {
+        margin: 12px 0 !important;
     }
 }
 
