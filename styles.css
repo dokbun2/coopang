@@ -121,13 +121,13 @@ body {
 
 .logo {
     font-family: 'Paperlogy-Regular', 'Noto Sans KR', sans-serif;
-    font-size: 24px;
+    font-size: 29px;
     font-weight: bold;
 }
 
 .logo-img {
     height: 32px;
-    vertical-align: middle;
+    vertical-align: baseline;
     margin-right: 10px;
 }
 
@@ -430,10 +430,11 @@ body {
         padding: 12px !important;
     }
     .logo {
-        font-size: 18px !important;
+        font-size: 22px !important;
     }
     .logo-img {
         height: 24px !important;
+        vertical-align: baseline !important;
     }
     .banner {
         margin-bottom: 20px !important;
@@ -448,10 +449,10 @@ body {
         flex-wrap: nowrap !important;
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch !important;
-        justify-content: flex-start !important;
+        justify-content: center !important;
         gap: 8px !important;
         margin: 20px 0 15px 0 !important;
-        padding: 0 8px !important; /* 내부 패딩으로 스크롤 영역 확보 */
+        padding: 0 8px !important;
     }
     .category-btn {
         font-size: 13px !important;
