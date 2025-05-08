@@ -121,7 +121,7 @@ body {
 
 .logo {
     font-family: 'Paperlogy-Regular', 'Noto Sans KR', sans-serif;
-    font-size: 29px;
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -430,7 +430,7 @@ body {
         padding: 12px !important;
     }
     .logo {
-        font-size: 22px !important;
+        font-size: 26px !important;
     }
     .logo-img {
         height: 24px !important;
