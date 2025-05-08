@@ -396,6 +396,33 @@ body {
         max-height: 120px;
         object-fit: contain;
     }
+    .ad-mobile-only {
+        display: block !important;
+        width: 100% !important;
+        margin: 12px 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+    }
+    .ad-mobile-only .ad-container {
+        min-height: 90px !important;
+        height: 90px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .ad-mobile-only .adsbygoogle {
+        min-height: 90px !important;
+        height: 90px !important;
+        width: 100% !important;
+        display: block !important;
+    }
+    .banner-image {
+        min-height: 60px !important;
+        aspect-ratio: 4/1 !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -471,4 +498,9 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+
+/* 모바일 전용 광고 숨김(기본) */
+.ad-mobile-only {
+    display: none;
 } 
