@@ -78,20 +78,22 @@ window.addEventListener('load', () => {
     initPagination();
 });
 
-// 사이드 배너의 상단 위치를 배너와 맞추기
-function syncAdSideTop() {
+// 사이드 배너의 상단 위치를 배너 상단 끝선과 맞추기
+function syncAdSideTopToBanner() {
     const banner = document.querySelector('.banner');
     const adSides = document.querySelectorAll('.ad-side');
     if (banner && adSides.length > 0) {
-        const bannerHeight = banner.offsetHeight;
+        const bannerRect = banner.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const bannerTop = bannerRect.top + scrollTop;
         adSides.forEach(ad => {
-            ad.style.top = bannerHeight + 'px';
+            ad.style.top = bannerTop + 'px';
         });
     }
 }
 
-window.addEventListener('load', syncAdSideTop);
-window.addEventListener('resize', syncAdSideTop);
+window.addEventListener('load', syncAdSideTopToBanner);
+window.addEventListener('resize', syncAdSideTopToBanner);
 
 // 카드 렌더링 함수
 function renderCards(category = 'all') {
