@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://coopang-jc352bwho-dokbun2s-projects.vercel.app/sitemap.xml 
+Sitemap: https://coopang.dokbun2.com/sitemap.xml 
